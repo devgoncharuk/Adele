@@ -1,0 +1,25 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.clearfix {
+    &:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

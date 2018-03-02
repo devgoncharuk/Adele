@@ -1,0 +1,112 @@
+.header-bg{
+    background-color: $base-bg;
+}
+.headerTop {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex: 1 0 270px;
+    font: 15px $basic-bold-font;
+    color: $nav-color;
+    img {
+        margin-right: 8px;
+    }
+}
+
+nav{
+    flex: 1 0 50%;
+    // order:2;
+}
+
+// ----------three-lines-menu---------------
+
+#menuBtn__icon {
+    width: 35px;
+    height: 30px;
+    position: relative; 
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    span {
+        display: block;
+        position: absolute;
+        height: 6px;
+        width: 100%;
+        background: $nav-color;
+        border-radius: 4px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+    & span:nth-child(1) {
+        top: 0px;
+    }
+    & span:nth-child(2) {
+        top: 12px;
+    }
+    & span:nth-child(3) {
+        top: 12px;
+    }
+    & span:nth-child(4) {
+        top: 24px;
+    }
+    &.open span:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+    &.open span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+    &.open span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+    &.open span:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+}
+
+// -----------------end-of-three-lines-menu------------
+
+.nav{
+    opacity: 0;
+    transition: all ease 1s;
+    &__link{
+        color: $nav-color;
+        text-decoration: none;
+        font: 15px $basic-font;
+        margin: 0px 10px;
+        padding: 10px 10px;
+        position: relative;
+        z-index: 0;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            background: #18a3dd;
+            opacity: 0.3;
+            transition: all 0.3s;
+        }
+        &:hover:before{
+            width: 100%;
+        }
+    }
+}
+
+.menu__hidden{
+    opacity: 1;
+}

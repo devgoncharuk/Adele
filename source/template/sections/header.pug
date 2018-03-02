@@ -1,0 +1,19 @@
+header.header-bg
+    .container
+        .headerTop
+            a(href="").logo
+                img(src="images/logo.png", alt="logotype")
+                span Supplement
+            nav
+                .nav
+                    -var items = ["Home", "Features", "Reviewes", "Support"]
+                    each item in items
+                        a.nav__link(href="#")=item
+            .menuBtn
+                #menuBtn__icon
+                    span
+                    span
+                    span
+                    span
+
+    
