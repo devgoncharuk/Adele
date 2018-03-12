@@ -1,0 +1,47 @@
+.statistic-wrapper{
+    margin-top: 50px;
+    background: url(../images/violet__bg.png) center no-repeat;
+}
+
+.statistic{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    img{
+        margin: 0 7% 0 -200px;
+        padding-bottom: 70px;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // flex: 1 0 25%;
+        &__numbers{
+            font: 4.5rem 'latoblack';
+            color: #fff;
+            margin: 0;
+            line-height: 3.5rem;
+            margin-left: 18px;
+        }
+        &__quantity{
+            font: 16px 'latobold';
+            color: $blue-base-color;
+            text-transform: uppercase;
+        }
+        &__per{
+            font: 16px 'latolight';
+            color: #a9a9a9;
+            margin: 0;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.statistic__info-wrapper{
+    display: flex;
+    flex: 1 1 65%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

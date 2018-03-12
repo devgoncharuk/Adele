@@ -1,0 +1,39 @@
+.features {
+    p {
+        margin: 0;
+        font: 16px $secondaty-font;
+        color: #83888f;
+    }
+}
+
+.we__offer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 4.375rem;
+    &__list {
+        flex-basis: 290px;
+        &-rewerse{
+            text-align: right;
+                h3{
+                    margin: 0 25px 15px 0 !important;
+                }
+        }
+        &__block {
+            display: flex;
+            flex-direction: column;
+            margin: 4.3rem 0;
+            h3 {
+                margin: 0 0 20px 25px;
+            }
+            p{
+                margin-top: 15px;
+            }
+        }
+    }
+    &__image {
+        flex-grow: 1;
+        text-align: center;
+    }
+}

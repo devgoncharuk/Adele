@@ -1,13 +1,150 @@
-.container{
+.container {
     max-width: 1170px;
     margin: auto;
     padding: 0 5px;
 }
 
-a{
+h1 {
+    color: $title-color;
+    font: 4.5rem $basic-bold-font;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+h2 {
+    font: 30px 'ralewaylight';
+    color: $title-color;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+h3 {
+    font: 20px $secondary-bold-font;
+    color: $title-color;
+    text-transform: uppercase;
+}
+
+h4 {
+    font: 16px $secondary-bold-font;
+    color: $title-color;
+    text-transform: uppercase;
+}
+
+a {
     text-decoration: none;
 }
 
-img{
+img {
     max-width: 100%;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+.line-left {
+    border-left: 5px solid $blue-base-color;
+    border-radius: 2px;
+}
+
+.line-right {
+    border-right: 5px solid $blue-base-color;
+    border-radius: 2px;
+}
+
+.bottom-line:after {
+    content:"";
+    display: block;
+    height: 5px;
+    width: 35px;
+    background-color: $blue-base-color;
+    margin-top: 12px;
+    border-radius: 2px;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #f1f1f1;
+    font: 16px $btn-font;
+    background-color: $blue-base-color;
+    width: 180px;
+    height: 50px;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid transparent;
+    transition: all ease .5s;
+    &:hover {
+        color: $blue-base-color;
+        background-color: transparent;
+        border-color: $blue-base-color;
+    }
+}
+
+.thin-divider {
+    border-right: 1px solid $blue-base-color;
+    font-family: $basic-bold-font;
+    padding-right: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.white-text{
+    color: $title-white;
+}
+
+// ----------------slider----------------
+
+.slick-slide{
+    &:hover, &:focus, &:active {
+        outline: none;
+        border: none;
+    }
+}
+
+.slick-arrow{
+    border: 3px solid $slick-arrow-default;
+    @include circle(65px);
+    z-index: 999;
+    &:hover{
+        border-color: $blue-base-color;
+        &.slick-prev:before, &.slick-next:before {
+            color: $blue-base-color;
+        }
+    }
+}
+
+.slick-prev:before, .slick-next:before{
+    color: $slick-arrow-default;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.slick-dots li button:before{
+    font-size: 30px;
+    color: $blue-base-color;
+}
+
+.slick-dots li.slick-active button:before {
+    color: $blue-base-color;
+}
+
+// -------------------animation------------------
+@keyframes pulse_animation {
+    0% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.6);
+    }
+    70% {
+        transform: rotate(-360deg);
+    }
 }

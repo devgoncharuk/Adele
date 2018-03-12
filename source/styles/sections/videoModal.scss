@@ -1,0 +1,38 @@
+.modalDialog{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+    z-index: 999;
+    &:target {
+        display: block;
+        pointer-events: auto;
+    }
+    &__inner{
+        width: 24rem;
+        margin: 10% auto;
+        position: relative;
+        &-close{
+            display: inline-block;
+            vertical-align: top;
+            font-size: 2.5rem;
+            color: $blue-base-color;
+            position: absolute;
+            right: -13px;
+            top: -23px;
+            &:hover{
+                color: red;
+            }
+        }
+        &-video{
+            video{
+                width: 100%;
+            }
+        }
+    }
+}

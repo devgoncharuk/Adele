@@ -1,0 +1,50 @@
+.clients {
+    margin-top: 115px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: $clients-color;
+    text-align: center;
+    background: #1a1320 url('../images/clients-bg.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.clients-slider {
+    margin-top: 70px;
+    div{
+        margin-bottom: 15px;
+    }
+}
+
+.clients-custom-pb {
+    font-style: italic;
+    padding: 0 11.8rem;
+}
+
+.clients__acount{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    &__avatar {
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        margin-right: 30px;
+        position: relative;
+        img{
+            height: 100%;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        h4 {
+            margin: 0;
+        }
+        p{
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.results {
+    margin-top: 6.25rem;
+    p {
+        margin: 0;
+        font: 16px $secondaty-font;
+        color: #83888f;
+    }
+}
+
+// --------------------slider-real-man-----------------------
+.realResults-slider {
+    margin-top: 80px;
+}
+
+.realResults__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    &__photos {
+        display: flex;
+        align-items: center;
+    }
+    &__text {
+        text-transform: uppercase;
+        padding-left: 30px;
+        &__weight {
+            display: flex;
+            justify-content: space-between;
+            &__changes {
+                font: 2.5rem 'latobold';
+                color: $title-color;
+                span {
+                    font: 1rem $secondaty-font;
+                }
+                &:first-child {
+                    margin-right: 30px;
+                }
+            }
+        }
+        &__name {
+            div:first-child {
+                padding-left: 15px;
+                p {
+                    color: $title-color;
+                }
+            }
+        }
+    }
+}
+
+.relative-small {
+    margin-right: -4.1rem;
+    z-index: 1;
+}
+
+#weight-before:after {
+    content: "before";
+    display: block;
+    font: 1rem $secondaty-font;
+    color: $blue-base-color;
+    text-transform: capitalize;
+    line-height: 50px;
+}
+
+#weight-after:after {
+    content: "After";
+    display: block;
+    font: 1rem $secondaty-font;
+    color: $blue-base-color;
+    text-transform: capitalize;
+    line-height: 50px;
+}
+
+

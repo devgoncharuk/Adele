@@ -1,0 +1,58 @@
+.hero-wrapper{
+    background: url(../images/hero-bg.png) center  no-repeat;
+    margin-top: 180px;
+}
+
+.hero{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    &__desc{
+        flex: 1 1 435px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        &__title{
+            font: 1.5rem $basic-bold-font;
+            color: $title-color;
+            padding-left: 30px;
+            text-transform: capitalize;
+        }
+        &__text{
+            margin-top: 75px;
+            font: 1rem $secondaty-font;
+            color: $nav-color;
+        }
+        &__order{
+            margin-top: 50px;
+            &-video{
+                display: inline-block;
+                vertical-align: middle;
+                font: 16px $btn-font;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin-left: 25px;
+                color: $title-color;
+                &:hover .pulse{ //pulse animation on common.scss file
+                    animation-name: pulse_animation;
+	                animation-duration: 5000ms;
+	                transform-origin:70% 70%;
+	                animation-iteration-count: infinite;
+	                animation-timing-function: linear;
+                }
+                i{
+                    margin-left: 25px;
+                    font-size: 20px;
+                    color: $blue-base-color;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+
+  

@@ -1,0 +1,94 @@
+.supplement {
+    color: #83888f;
+    padding-top: 6.875rem;
+    padding-bottom: 6.25rem;
+}
+
+.facts {
+    margin-top: 3.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__links{
+        margin: 0 65px;
+        flex: 0 1 515px;
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+            padding-bottom: 18px;
+            border-bottom: 5px solid $title-color;
+            &__name {
+                font: 24px 'latoblack';
+                color: $title-color;
+                align-self: center;
+            }
+            &__desc {
+                text-align: right;
+                font: 16px 'latoblack';
+                color: $title-color;
+                div{
+                    font-family: $secondaty-font;
+                }
+            }
+        }
+        &__list {
+            padding: 0px;
+            li {
+                display: flex;
+                justify-content: space-between;
+                color: $title-color;
+                font-family: $secondaty-font;
+                text-transform: capitalize;
+                padding: 15px 0 10px;
+                border-bottom: 1px solid #ebebeb;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                &:hover {
+                    transform: scale(1.1);
+                    border: 1px solid #ebebeb;
+                    padding: 15px 20px 10px;
+                    box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.24);
+                }
+            }
+        }
+    }
+    &__desc{    
+        flex: 1 1 375px;
+        &>p{
+            padding-right: 95px;
+        }
+        img {
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            width: 100px;
+            height: 115px;
+        }
+        &__title {
+            padding-left: 20px;
+            margin: 45px 0 30px;
+            h4 {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.btnDownload {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    background-color: $blue-base-color;
+    border-radius: 30px;
+    color: #f1f1f1;
+    font-family: $btn-font;
+    align-items: center;
+    padding: 1.25rem 2.5rem;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    transition: all ease .5s;
+    &:hover {
+        @extend .btn:hover;
+    }
+}
+
+  
