@@ -108,6 +108,10 @@ nav{
     }
 }
 
-.menu__hidden{
+.menu__open{
     opacity: 1;
+}
+
+.menu__show {
+    max-height: 150px !important;
 }

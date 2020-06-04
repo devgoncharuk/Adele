@@ -30,7 +30,7 @@
             &-video{
                 display: inline-block;
                 vertical-align: middle;
-                font: 16px $btn-font;
+                font: 1rem $btn-font;
                 letter-spacing: 2px;
                 text-transform: uppercase;
                 margin-left: 25px;
@@ -43,8 +43,8 @@
 	                animation-timing-function: linear;
                 }
                 i{
-                    margin-left: 25px;
-                    font-size: 20px;
+                    margin-left: 1rem;
+                    font-size: 1rem;
                     color: $blue-base-color;
                     
                 }

@@ -12,20 +12,20 @@ h1 {
 }
 
 h2 {
-    font: 30px 'ralewaylight';
+    font: 1.875rem 'ralewaylight';
     color: $title-color;
     margin: 10px 0;
     text-transform: uppercase;
 }
 
 h3 {
-    font: 20px $secondary-bold-font;
+    font: 1.25rem $secondary-bold-font;
     color: $title-color;
     text-transform: uppercase;
 }
 
 h4 {
-    font: 16px $secondary-bold-font;
+    font: 1rem $secondary-bold-font;
     color: $title-color;
     text-transform: uppercase;
 }
@@ -67,11 +67,11 @@ p {
     vertical-align: middle;
     text-transform: uppercase;
     color: #f1f1f1;
-    font: 16px $btn-font;
+    font: 1rem $btn-font;
     background-color: $blue-base-color;
-    width: 180px;
-    height: 50px;
-    line-height: 46px;
+    width: 11.25rem;
+    height: 3.125rem;
+    line-height: calc(3.125rem - 4px);
     text-align: center;
     border-radius: 25px;
     border: 2px solid transparent;
@@ -98,6 +98,10 @@ p {
 
 .white-text{
     color: $title-white;
+}
+
+.basic-text-color {
+    color: $basic-text-color;
 }
 
 // ----------------slider----------------
@@ -134,6 +138,22 @@ p {
 
 .slick-dots li.slick-active button:before {
     color: $blue-base-color;
+}
+
+.facebook:hover {
+    color: #3B5998;
+}
+
+.twitter:hover {
+    color: #1DA1F2;
+}
+
+.youtube:hover {
+    color: #FF0000;
+}
+
+.dribbble:hover {
+    color: #E84C88;
 }
 
 // -------------------animation------------------

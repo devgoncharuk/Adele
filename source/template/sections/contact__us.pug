@@ -1,0 +1,14 @@
+section.contacts
+    .container
+        h2.white-text
+            span.thin-divider Inquire   
+            | Your Issue	
+        p.basic-text-color We’re always happy to reply our customers. 
+        form(action="", method="post")
+            .contact-us
+                .contact-us__info
+                    input.contact-us__info__name(type="text", name="", placeholder="Name", required)
+                    input.contact-us__info__email(type="email", name="", placeholder="Email", required)
+                p.contact-us__desc Subject
+                textarea.contact-us__subject(name="", required)
+                button.btn.contact-us__submit-btn(type="submit") Send

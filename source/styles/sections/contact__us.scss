@@ -1,0 +1,58 @@
+.contacts {
+    padding: 7.2rem 0;
+    text-align: center;
+    h2 {
+        color: $title-color;
+    }
+}
+
+.contact-us {
+    text-align: center;
+    margin: 70px auto 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    color: #ababab;
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        input {
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #ebebeb;
+            padding-bottom: 15px;
+            width: 260px;
+            &:focus {
+                border-color: $blue-base-color;
+            }
+        }
+        &__name {
+            margin-right: 30px;
+        }
+    }
+    &__desc {
+        margin-bottom: 10px;
+        align-self: flex-start;
+    }
+    &__subject {
+        resize: none;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #ebebeb;
+        border-top: 1px solid #ebebeb;
+        height: 140px;
+        width: 100%;
+        &:focus {
+            border-color: $blue-base-color;
+        }
+    }
+    &__submit-btn {
+        margin-top: 50px;
+        width: 225px;
+    }
+}
+
+  

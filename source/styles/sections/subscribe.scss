@@ -1,0 +1,48 @@
+.subscribe {
+    background: #000 url(../images/girl-gym.png) top/cover no-repeat;
+    background-attachment: fixed;
+    padding: 90px 0;
+    text-align: center;
+    p{
+        font: 1rem $secondaty-font;
+        color: #767a7d;
+    }
+}
+
+.subscribe-form {
+    margin: 30px auto 0;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.502);
+    padding: 35px 30px;
+    div {
+        position: relative;
+    }
+    input {
+        width: 100%;
+        border-radius: 25px;
+        height: 50px;
+        outline: none;
+        border: none;
+        padding-left: 30px;
+        padding-right: 155px;
+    }
+    button {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        color: #fff;
+        font: 1rem $btn-font;
+        text-transform: uppercase;
+        background-color: $blue-base-color;
+        border: none;
+        outline: none;
+        width: 150px;
+        border-radius: 0 25px 25px 0;
+        z-index: 1;
+        margin-right: -1px;
+        box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.5);
+    }
+}
+

@@ -12,11 +12,11 @@
     &__logos {
         margin-top: 50px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         img {
-            margin-right: 5rem;
+            // margin-right: 3rem;
             margin-bottom: 20px;
         }
     }

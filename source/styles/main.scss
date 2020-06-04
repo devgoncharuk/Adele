@@ -1,3 +1,5 @@
+@import "preloader";
+
 @import "../../node_modules/font-awesome/scss/font-awesome";
 @import "../../node_modules/normalize.scss/normalize";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
@@ -8,6 +10,7 @@
 @import "global/base";
 @import "global/mixins";
 @import "global/common";
+
 @import "sections/header";
 @import "sections/hero";
 @import "sections/videoModal";
@@ -18,3 +21,8 @@
 @import "sections/supplement";
 @import "sections/certifications";
 @import "sections/buy__now";
+@import "sections/subscribe";
+@import "sections/contact__us";
+@import "sections/footer";
+
+@import "global/media-query"

@@ -17,7 +17,6 @@
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
-        // flex: 1 0 25%;
         &__numbers{
             font: 4.5rem 'latoblack';
             color: #fff;
@@ -26,12 +25,12 @@
             margin-left: 18px;
         }
         &__quantity{
-            font: 16px 'latobold';
+            font: 1rem 'latobold';
             color: $blue-base-color;
             text-transform: uppercase;
         }
         &__per{
-            font: 16px 'latolight';
+            font: 1rem 'latolight';
             color: #a9a9a9;
             margin: 0;
             text-transform: capitalize;

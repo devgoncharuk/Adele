@@ -1,9 +1,14 @@
 // ----------menu-animation---------------
 
 $(document).ready(function () {
+
+    $(window).load(function () {
+        $(".preloader").delay(100).fadeOut().remove();
+    });
+
     $('#menuBtn__icon').click(function () {
         $(this).toggleClass('open');
-        $('.nav').toggleClass('menu__hidden');
+        $('.nav').toggleClass('menu__open');
         if (window.matchMedia('(max-width: 768px)').matches) {
             $('.nav').toggleClass('menu__show');
         }
@@ -17,7 +22,22 @@ $(document).ready(function () {
         autoplay: true,
         speed: 800,
         fade: true,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    dots: false,
+                    arrows: false
+                }
+            }
+        ]
     });
 
     $('.clients-slider').slick({
@@ -30,15 +50,18 @@ $(document).ready(function () {
 
     // ---------------tabs---------------
     $('.facts__desc').hide();
-    if($('.facts__desc').hasClass('active-desc'))
+    if ($('.facts__desc').hasClass('active-desc'))
         $('.facts__desc.active-desc').show();
 
-        
+
     $('.facts__links__list li').click(function (e) {
         e.preventDefault();
-        var index = $(this).index();
-        var tap = $('.facts__desc:eq('+index+')');
-        if (tap.hasClass('active-desc')) 
+        let index = $(this).index();
+        let tap = $('.facts__desc:eq(' + index + ')');
+        if (window.matchMedia('(max-width: 967px)').matches) {
+            $('html, body').animate({ scrollTop: $('.facts').offset().top }, 500);
+        }
+        if (tap.hasClass('active-desc'))
             return 0;
         else {
             $('.active-desc').hide();
@@ -46,5 +69,13 @@ $(document).ready(function () {
             tap.addClass('active-desc');
             tap.fadeIn(1000, 'swing');
         }
-    })
+    });
+
+    $('.headerTop .nav').on('click', function (event) {
+        console.log(`Abrams! ${event.target.getAttribute('href')}`);
+        if (event.target === 'A') {
+            console.log(`Bingo! ${event.target}`);
+        }
+    });
+
 });

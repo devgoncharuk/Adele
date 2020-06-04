@@ -19,13 +19,13 @@
             padding-bottom: 18px;
             border-bottom: 5px solid $title-color;
             &__name {
-                font: 24px 'latoblack';
+                font: 1.5rem 'latoblack';
                 color: $title-color;
                 align-self: center;
             }
             &__desc {
                 text-align: right;
-                font: 16px 'latoblack';
+                font: 1rem 'latoblack';
                 color: $title-color;
                 div{
                     font-family: $secondaty-font;
