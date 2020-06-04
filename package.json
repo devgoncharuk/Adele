@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devgoncharuk/Adele-sup.git"
+    "url": "git+https://github.com/devgoncharuk/Adele.git"
   },
   "author": "devgoncharuk",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/devgoncharuk/Adele-sup/issues"
+    "url": "https://github.com/devgoncharuk/Adele/issues"
   },
-  "homepage": "https://github.com/devgoncharuk/Adele-supn#readme",
+  "homepage": "https://github.com/devgoncharuk/Adele#readme",
   "devDependencies": {
     "browser-sync": "^2.23.3",
-    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp": "4.0",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-concat": "^2.6.1",
     "gulp-pug": "^3.3.0",
